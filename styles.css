@@ -191,7 +191,30 @@ hr { width:40%; height:5px; background: rgb(0, 0, 0); transform: translateX(70%)
             font-weight: bold;
 
         }
-    
+        
+        .card {
+            color: white;
+            float: left;
+            width: calc(25% - 20px);
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+            height: 200px;
+         }
+         .card p {
+            font-size: 18px;
+         }
+         .cardContainer:after {
+            content: "";
+            display: table;
+            clear: both;
+         }
+         @media screen and (max-width: 600px) {
+            .card {
+               width: 100%;
+            }
+      
+          
 /*--------------------------*/
 /*----- MEDIA QUERRY -----*/
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
