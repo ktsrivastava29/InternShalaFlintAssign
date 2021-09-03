@@ -67,7 +67,8 @@ body { font-family:Arial, Helvetica, sans-serif }
         width: 75%;
         float: right;
         height: 40vh;
-        margin: 2em;
+        margin-top: 2em;
+        margin-bottom: 1em;
     
     
         display: flex;
@@ -92,16 +93,30 @@ body { font-family:Arial, Helvetica, sans-serif }
       }
       .base{
         width: 75%;
-        float: right;
+  
         height: 40vh;
         display: flex;
-        width: 80%;
+        width: 37%;
         height: 100%;
         justify-content: center;
-        float: right;
+        align-items: center;
+        text-align: center;
         font-size: 1.1em;
         background-color: #0082e6;
+        overflow: hidden;
 
+      }
+      .lefticon{
+        background-color: #0082e6;
+        width: 20%;
+        align-items: center;
+        float: left;
+        margin-left: 1em;
+      }
+
+      .secondflex{
+        display: flex;
+        flex-direction: row;
       }
 /*--------------------------*/
 /*----- MEDIA QUERRY -----*/
