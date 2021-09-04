@@ -8,7 +8,7 @@
     font-family: inherit;
     font-style: inherit;
     font-size: 100%;
- 
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
  
@@ -127,6 +127,8 @@ hr { width:40%; height:5px; background: rgb(0, 0, 0); transform: translateX(70%)
         height: 25%;
         margin: 1em;
         padding: 5px;
+        overflow: visible;
+        
       }
       .base{
         width: 80%;
@@ -199,7 +201,9 @@ hr { width:40%; height:5px; background: rgb(0, 0, 0); transform: translateX(70%)
             padding: 10px;
             border-radius: 10px;
             margin: 10px;
+            overflow-y: hidden;
             height: 200px;
+            
          }
          .card p {
             font-size: 18px;
@@ -208,10 +212,67 @@ hr { width:40%; height:5px; background: rgb(0, 0, 0); transform: translateX(70%)
             content: "";
             display: table;
             clear: both;
+           
          }
+
+         .starting{
+           display: flex;
+           justify-content: space-between;
+           padding-top: 1em;
+           padding-bottom: .5em;
+         }
+         .ethermon{
+           font-size: 1.7em;
+           color: #000000;
+           font-weight: bold;
+         }
+         .twodays{
+           background-color: white;
+          border:0.1em solid #ffffff;
+          margin:0 0.3em 0.3em 0;
+          border-radius:1em;
+          padding-top: 0.2em;
+          box-sizing: border-box;
+          font-family:'Roboto',sans-serif;
+        font-weight:300;
+        color:#000000;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+         }
+         .Total{
+           padding: 0.2em;
+           color: #000000;
+         }
+         .dollarClass{
+           padding: 0.2em;
+         }
+         .allocatclass{
+           display: flex;
+           padding: 0.2em;
+           justify-content: space-between;
+         }
+         .Total2{
+color: #6be7dd;
+         }
+         .bottomflex{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: space-between;
+           text-align: center;
+         }
+
+
+
+         
+
          @media screen and (max-width: 600px) {
             .card {
-               width: 100%;
+               width: 90%;
+               justify-content: center;
+               align-items: center;
+
             }
       
           
@@ -245,6 +306,7 @@ hr { width:40%; height:5px; background: rgb(0, 0, 0); transform: translateX(70%)
     .button1{
         display:flex;
         width: 50%;
+        overflow: visible;
         transform: translateX(-15%);
         .fab fa-bitcoin fa-8x{
             fab fa-bitcoin fa-5x
