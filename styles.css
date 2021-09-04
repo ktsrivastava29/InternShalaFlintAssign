@@ -247,11 +247,13 @@ hr { width:40%; height:5px; background: rgb(0, 0, 0); transform: translateX(70%)
       }
       .buttontranform{
           transform: translateX(33%);
+          overflow: visible;
       }
       .button1{
         display:inline-block;
   
         align-items: center;
+        
         justify-content: center;
         text-align: center;
         padding:0.5em 1.5em;
